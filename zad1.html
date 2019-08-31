@@ -1,0 +1,50 @@
+
+
+
+<html>
+    <head>
+        <script type="text/javascript">
+            var samochod = function(marka,kolor,rokProdukcji,przebieg) {
+            this.marka=marka;
+            this.kolor=kolor;
+            this.rokProdukcji=rokProdukcji;
+            this.przebieg=przebieg;
+        }
+
+        samochod.prototype.drive = function(n) {
+
+            
+            lkm=this.przebieg+ n; 
+
+            if (lkm = 10000) {
+
+                console.log("Wymień olej")
+
+            }
+            console.log(lkm);
+        }
+
+
+        samochod.prototype.changeColor = function(k) {
+            
+            
+            this.kolor = k;
+
+
+
+        }
+
+
+        samochod.prototype.przebiegInfo = function() {
+            console.log("Przebieg samochodu o marce " + this.marka + "wynosi " + this.przebieg)
+        }
+
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
